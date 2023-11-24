@@ -1,0 +1,12 @@
+<h2>Geluidsniveau</h2>
+<h4>{{this.maxValue}} dBA</h4>
+<div class="container">
+    <div class="item"></div>
+    <div class="item">
+        <div class="bar">
+            <i #indicatorBirds class="bi bi-caret-left-fill arrow" id="birds-arrow"><div id="dbCounter">{{this.lastMinuteBirds[this.currentIndexBirds]|number: "2.0-0"}}dB</div></i>
+            <i #indicatorLion class="bi bi-caret-right-fill arrow" id="lion-arrow"><div id="dbCounter2">{{this.lastMinuteLions[this.currentIndexLions]|number: "2.0-0"}}dB</div></i>
+    </div>
+    <h4>{{this.minValue}} dBA</h4>
+</div>
+
